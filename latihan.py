@@ -37,3 +37,26 @@
 
 # angka.add(6)
 # print(angka)
+
+
+# Buat fungsi untuk menghitung keliling lingkaran (dengan parameter jari-jari).
+# Buat fungsi untuk menampilkan pesan sambutan (dengan parameter nama dan pesan default: "Selamat datang!").
+# Buat fungsi rekursif untuk menghitung bilangan pangkat (contoh: 2^3 = 8).
+
+# def keliling(pi, r):
+#   return 2 * pi * r 
+
+# hasil = keliling(22/7, 7)
+# print (f"hasil dari keliling lingkaran adalah {hasil}")
+
+# def pesan_sambutan(nama, pesan = "Selamat Datang!"):
+#   print(f"hai {nama}, {pesan} di acara kami")
+
+# pesan_sambutan("Yogi")
+
+def pangkat(m, n):
+  if n == 0:
+    return 1
+  else:
+    return m * pangkat (m, n - 1)
+print(pangkat(2, 3))

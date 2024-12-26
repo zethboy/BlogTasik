@@ -108,3 +108,42 @@
 # # menambahkan
 # angka.add(8)
 # print (angka)
+
+# fungsi
+def sapa(nama):
+  print(f"hallo {nama}, selamat belajar phyton")
+
+sapa("yogi")
+
+# fungsi dengan return
+def hitung_persegi(sisi):
+  return sisi * sisi
+
+hasil = hitung_persegi(8)
+print(f"hasilnya adalah : {hasil}")
+
+# parameter default
+
+def woi(nama = "Yogi"):
+  print(f"hallo {nama}, semangat yaa!")
+
+woi()
+woi("ayaa")
+
+# dengan banyak parameter
+
+def hitungluaspersegipanjang(panjang, lebar):
+  return panjang * lebar
+
+hasil = hitungluaspersegipanjang(3, 12)
+print(f"Hasil luasnya adalah {hasil}")
+
+#fungsi rekursif 
+
+def factorial(n):
+  if n == 1:
+    return 1
+  else:
+    return n * factorial ( n - 1 )
+  
+print(factorial(5))
