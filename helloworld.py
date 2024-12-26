@@ -60,3 +60,51 @@
 # for i in range (3):
 #   for j in range (3):
 #     print(f"i={i}, j={j}")
+
+# list
+
+# membuat list
+# buah = ["apel", "anggur", "pepaya"]
+
+# # akses elemen
+# print(buah[0])
+
+# #menambahkan elemen
+
+# buah.append("salak")
+# print(buah)
+
+# # menghapus elemen
+
+# buah.remove("pepaya")
+# print(buah)
+
+# tuple (hampir sama tapi ga bisa diubah)
+
+# angka = (1,2,3)
+# print (angka[2])
+
+# dictionary
+
+# # membuat dictionary
+# mahasiswa = {"Nama": "Yogi", "Kelas": "C", "NPM" : 123456789}
+
+# # mengakses elemen dictionary
+# print(mahasiswa["NPM"])
+
+# # menambahkan
+# mahasiswa["angkatan"] = 2024
+# print(mahasiswa["angkatan"])
+
+# # menghapus 
+# del mahasiswa["Kelas"]
+# print (mahasiswa)
+
+# set
+# membuat set
+# angka = {1, 2, 3, 4}
+# print(angka)
+
+# # menambahkan
+# angka.add(8)
+# print (angka)
