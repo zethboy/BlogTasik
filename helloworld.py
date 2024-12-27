@@ -110,49 +110,63 @@
 # print (angka)
 
 # fungsi
-def sapa(nama):
-  print(f"hallo {nama}, selamat belajar phyton")
+# def sapa(nama):
+#   print(f"hallo {nama}, selamat belajar phyton")
 
-sapa("yogi")
+# sapa("yogi")
 
-# fungsi dengan return
-def hitung_persegi(sisi):
-  return sisi * sisi
+# # fungsi dengan return
+# def hitung_persegi(sisi):
+#   return sisi * sisi
 
-hasil = hitung_persegi(8)
-print(f"hasilnya adalah : {hasil}")
+# hasil = hitung_persegi(8)
+# print(f"hasilnya adalah : {hasil}")
 
-# parameter default
+# # parameter default
 
-def woi(nama = "Yogi"):
-  print(f"hallo {nama}, semangat yaa!")
+# def woi(nama = "Yogi"):
+#   print(f"hallo {nama}, semangat yaa!")
 
-woi()
-woi("ayaa")
+# woi()
+# woi("ayaa")
 
-# dengan banyak parameter
+# # dengan banyak parameter
 
-def hitungluaspersegipanjang(panjang, lebar):
-  return panjang * lebar
+# def hitungluaspersegipanjang(panjang, lebar):
+#   return panjang * lebar
 
-hasil = hitungluaspersegipanjang(3, 12)
-print(f"Hasil luasnya adalah {hasil}")
+# hasil = hitungluaspersegipanjang(3, 12)
+# print(f"Hasil luasnya adalah {hasil}")
 
 #fungsi rekursif 
 
-def factorial(n):
-  if n == 1:
-    return 1
-  else:
-    return n * factorial ( n - 1 )
+# def factorial(n):
+#   if n == 1:
+#     return 1
+#   else:
+#     return n * factorial ( n - 1 )
   
-print(factorial(5))
+# print(factorial(5))
 
-def fibonnaci(n):
+# def fibonnaci(n):
+#   if n == 0:
+#     return 0
+#   elif n == 1:
+#     return 1
+#   else:
+#     return fibonnaci(n-1) + fibonnaci(n-2)
+# print (fibonnaci(6))
+
+def fibonnaci_optimized(n, memo={}):
+  if n in memo:
+    return memo[n]
   if n == 0:
     return 0
   elif n == 1:
     return 1
   else:
-    return fibonnaci(n-1) + fibonnaci(n-2)
-print (fibonnaci(6))
+    result = fibonnaci_optimized(n - 1, memo) + fibonnaci_optimized(n - 2, memo)
+    memo[n] = result  
+    return result
+
+print(fibonnaci_optimized(50))
