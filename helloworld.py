@@ -235,15 +235,56 @@
 # buble_sort(my_list)
 # print("hasil buble sort :", my_list)
 
-def buble_sort(arr):
-  n = len(arr)
-  for i in range(n):
-    for j in range(0, n-i-1):
-      if arr[j] > arr [j + 1]:
-        arr[j], arr[j + 1] = arr [j + 1], arr [j]
-myList = [90, 12, 34, 51, 8, 190]
-buble_sort(myList)
-print("Buble short nya adalah :", myList)
+# def buble_sort(arr):
+#   n = len(arr)
+#   for i in range(n):
+#     for j in range(0, n-i-1):
+#       if arr[j] > arr [j + 1]:
+#         arr[j], arr[j + 1] = arr [j + 1], arr [j]
+# myList = [90, 12, 34, 51, 8, 190]
+# buble_sort(myList)
+# print("Buble short nya adalah :", myList)
+
+# linear search
+# def linear(arr, target):
+#   for i in range(len(arr)):
+#     if arr[i] == target:
+#       return i
+#   return -1
+# arr = [10, 20, 30, 40, 50]
+# target = 30
+# result = linear(arr, target)
+
+# if result != 1:
+#   print("target ditemukan di indeks ke:", result)
+# else:
+#   print("target not detected")
+
+# binary search
+
+def binary(arr, target):
+  left = 0
+  right = len(arr) - 1
+
+  while left <= right:
+    mid = (left + right) // 2
+    if arr[mid] == target:
+      return mid
+    elif arr[mid] < target:
+      left = mid + 1
+    else:
+      right = mid + 1
+  return-1
+
+arr = [10, 20, 30, 40, 50, 60, 70]
+target = 40
+result = binary(arr, target)
+
+if result != 1:
+  print("data ditemukan di indeks ke :", result)
+else:
+  print("data tidak ditemukan")
+
 
 
 
