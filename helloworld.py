@@ -188,20 +188,50 @@
 
 # dictionary
 
-myDict = {'nama' : 'Yogi', 'age' : 18}
-print(myDict)
-myDict['nama'] = 'Ayaa'
-print(myDict)
-myDict['age'] = 17
-print(myDict)
+# myDict = {'nama' : 'Yogi', 'age' : 18}
+# print(myDict)
+# myDict['nama'] = 'Ayaa'
+# print(myDict)
+# myDict['age'] = 17
+# print(myDict)
 
-# stack
+# # stack
 
-stack = []
+# stack = []
 
-stack.append(1)
-stack.append(2)
-stack.append(3)
+# stack.append(1)
+# stack.append(2)
+# stack.append(3)
 
-print(stack)
+# print(stack)
+
+# stack.pop()
+
+# print(stack)
+
+# from collections import deque
+
+# queue = deque()
+
+# queue.append(1)
+# queue.append(2)
+# queue.append(3)
+
+# print("queue setelah engueue", list(queue))
+
+# queue.popleft()
+# print("queue setelah deque", list(queue))
+
+# buble sort
+
+def buble_sort(arr):
+  n = len(arr)
+  for i in range(n):
+    for j in range(0, n-i-1):
+      if arr[j] > arr[j+1]:
+        arr[j], arr[j+1] = arr[j+1], arr[j]
+
+my_list = [65, 79, 29, 4, 90, 13, 187]
+buble_sort(my_list)
+print("hasil buble sort :", my_list)
 
