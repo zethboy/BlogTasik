@@ -194,3 +194,14 @@ myDict['nama'] = 'Ayaa'
 print(myDict)
 myDict['age'] = 17
 print(myDict)
+
+# stack
+
+stack = []
+
+stack.append(1)
+stack.append(2)
+stack.append(3)
+
+print(stack)
+
