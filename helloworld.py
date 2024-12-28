@@ -179,9 +179,18 @@
 
 # print(number)
 
-number = [5, 2, 1, 4, 3]
+# number = [5, 2, 1, 4, 3]
 
-number.append(6)
-number.sort()
+# number.append(6)
+# number.sort()
 
-print(len(number))
+# print(len(number))
+
+# dictionary
+
+myDict = {'nama' : 'Yogi', 'age' : 18}
+print(myDict)
+myDict['nama'] = 'Ayaa'
+print(myDict)
+myDict['age'] = 17
+print(myDict)
