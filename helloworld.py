@@ -173,8 +173,15 @@
 
 # ARRAY
 
-number = ['Yogi', 'Ayaa', 'Renata', 'Tiasya']
-number.append('ALLEA')
-number.remove('Ayaa')
+# number = ['Yogi', 'Ayaa', 'Renata', 'Tiasya']
+# number.append('ALLEA')
+# number.insert(3,'TIASYA')
 
-print(number)
+# print(number)
+
+number = [5, 2, 1, 4, 3]
+
+number.append(6)
+number.sort()
+
+print(len(number))
