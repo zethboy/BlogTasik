@@ -157,16 +157,24 @@
 #     return fibonnaci(n-1) + fibonnaci(n-2)
 # print (fibonnaci(6))
 
-def fibonnaci_optimized(n, memo={}):
-  if n in memo:
-    return memo[n]
-  if n == 0:
-    return 0
-  elif n == 1:
-    return 1
-  else:
-    result = fibonnaci_optimized(n - 1, memo) + fibonnaci_optimized(n - 2, memo)
-    memo[n] = result  
-    return result
+# def fibonnaci_optimized(n, memo={}):
+#   if n in memo:
+#     return memo[n]
+#   if n == 0:
+#     return 0
+#   elif n == 1:
+#     return 1
+#   else:
+#     result = fibonnaci_optimized(n - 1, memo) + fibonnaci_optimized(n - 2, memo)
+#     memo[n] = result  
+#     return result
 
-print(fibonnaci_optimized(50))
+# print(fibonnaci_optimized(50))\
+
+# ARRAY
+
+number = ['Yogi', 'Ayaa', 'Renata', 'Tiasya']
+number.append('ALLEA')
+number.remove('Ayaa')
+
+print(number)
