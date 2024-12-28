@@ -224,14 +224,26 @@
 
 # buble sort
 
+# def buble_sort(arr):
+#   n = len(arr)
+#   for i in range(n):
+#     for j in range(0, n-i-1):
+#       if arr[j] > arr[j+1]:
+#         arr[j], arr[j+1] = arr[j+1], arr[j]
+
+# my_list = [65, 79, 29, 4, 90, 13, 187]
+# buble_sort(my_list)
+# print("hasil buble sort :", my_list)
+
 def buble_sort(arr):
   n = len(arr)
   for i in range(n):
     for j in range(0, n-i-1):
-      if arr[j] > arr[j+1]:
-        arr[j], arr[j+1] = arr[j+1], arr[j]
+      if arr[j] > arr [j + 1]:
+        arr[j], arr[j + 1] = arr [j + 1], arr [j]
+myList = [90, 12, 34, 51, 8, 190]
+buble_sort(myList)
+print("Buble short nya adalah :", myList)
 
-my_list = [65, 79, 29, 4, 90, 13, 187]
-buble_sort(my_list)
-print("hasil buble sort :", my_list)
+
 
