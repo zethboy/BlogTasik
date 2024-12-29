@@ -101,3 +101,66 @@
 # print("suhu dalam reamur adalah ", reamur, "reamur")
 # fahrenheit = ((9/5) * celcius) + 32
 # print("suhu dalam fahrenheit adalah ", fahrenheit, "fahrenheit")
+
+
+# operasi logika atau boolean
+# not, or, and, xor
+
+# print('===NOT===') 
+# a = True
+# b = not a 
+# print(b)
+
+# print('===OR===')
+# c = True
+# d = False
+# e = c or d
+# print(c, 'OR', d, '=', e)
+# c = False
+# d = True
+# e = c or d
+# print(c, 'OR', d, '=', e)
+# c = True
+# d = True
+# e = c or d
+# print(c, 'OR', d, '=', e)
+# c = False
+# d = False
+# e = c or d
+# print(c, 'OR', d, '=', e)
+
+# print('===AND===')
+# f = True
+# g = False
+# h = f and g
+# print(f, 'and', g, '=', h)
+# f = False
+# g = True
+# h = f and g
+# print(f, 'and', g, '=', h)
+# f = True
+# g = True
+# h = f and g
+# print(f, 'and', g, '=', h)
+# f = False
+# g = False
+# h = f and g
+# print(f, 'and', g, '=', h)
+
+# print('===XOR===')
+# i = True
+# j = False
+# k = i ^ j
+# print(i, 'xor', j, '=', k)
+# i = False
+# j = True
+# k = i ^ j
+# print(i, 'xor', j, '=', k)
+# i = True
+# j = True
+# k = i ^ j
+# print(i, 'xor', j, '=', k)
+# i = False
+# j = False
+# k = i ^ j
+# print(i, 'xor', j, '=', k)
