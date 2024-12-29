@@ -262,29 +262,45 @@
 
 # binary search
 
-def binary(arr, target):
-  left = 0
-  right = len(arr) - 1
+# def binary(arr, target):
+#   left = 0
+#   right = len(arr) - 1
 
-  while left <= right:
-    mid = (left + right) // 2
-    if arr[mid] == target:
-      return mid
-    elif arr[mid] < target:
-      left = mid + 1
-    else:
-      right = mid + 1
-  return-1
+#   while left <= right:
+#     mid = (left + right) // 2
+#     if arr[mid] == target:
+#       return mid
+#     elif arr[mid] < target:
+#       left = mid + 1
+#     else:
+#       right = mid + 1
+#   return-1
 
-arr = [10, 20, 30, 40, 50, 60, 70]
-target = 40
-result = binary(arr, target)
+# arr = [10, 20, 30, 40, 50, 60, 70]
+# target = 40
+# result = binary(arr, target)
 
-if result != 1:
-  print("data ditemukan di indeks ke :", result)
-else:
-  print("data tidak ditemukan")
+# if result != 1:
+#   print("data ditemukan di indeks ke :", result)
+# else:
+#   print("data tidak ditemukan")
 
+# a = 9
+# b = 5
+# c = a * b
+# print(c)
+
+# data  = input("masukkan data :")
+# print("Data nya dalah", data, ",type =", type(data))
+
+#  integer
+
+# data  = int(input("masukkan data :"))
+# print("Data nya dalah", data, ",type =", type(data))
+
+# biar dapet boolean
+# data  = bool(int(input("masukkan data :")))
+# print("Data nya dalah", data, ",type =", type(data))
 
 
 
