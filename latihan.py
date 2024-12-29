@@ -164,3 +164,29 @@
 # j = False
 # k = i ^ j
 # print(i, 'xor', j, '=', k)
+
+# inputUser = float(input("masukkan angkka lebih dari 3 atau kurang dari 10"))
+
+# isDari = inputUser < 10 and inputUser >3
+# print(isDari)
+
+# latihan kelas terbuka
+# print('=====NOMOR 1=====')
+# inputUsser = float(input("masukkan angka dengan syarat\n -lebih dari nol dan kurang dari 5\n - lebih dari 8 dan kurang dari 11\n :"))
+# constPert = inputUsser > 0 and inputUsser < 5
+# print("lebih dari 0 dan kurang dari 5 = ", constPert)
+# constKed = inputUsser > 8 and inputUsser < 11
+# print("lebih dari 8 dan kurang dari 11 = ", constKed)
+# constHasil = constPert or constKed
+# print("Hasil inputan anda = ", constHasil)
+
+# print('=====NOMOR 2=====')
+# inputUsser = float(input("masukkan angka dengan syarat\n -kurang dari nol atau\n lebih dari 5 dan kurang dari 8 atau\n  lebih dari 11\n :"))
+# constPert = inputUsser < 0 
+# print("kurang dari 0 = ", constPert)
+# constKed = inputUsser > 5 and inputUsser < 8
+# print("lebih dari 5 dan kurang dari 8 = ", constKed)
+# constKet = inputUsser > 11
+# print("lebih dari 11 = ", constKet)
+# constHasil = constPert or constKed or constKet
+# print("Hasil inputan anda = ", constHasil)
