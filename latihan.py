@@ -54,9 +54,50 @@
 
 # pesan_sambutan("Yogi")
 
-def pangkat(m, n):
-  if n == 0:
-    return 1
-  else:
-    return m * pangkat (m, n - 1)
-print(pangkat(2, 3))
+# def pangkat(m, n):
+#   if n == 0:
+#     return 1
+#   else:
+#     return m * pangkat (m, n - 1)
+# print(pangkat(2, 3))
+
+# latihan konversi suhu temperatur
+#  konversi celcius ke satuan lain
+# celcius = float(input("masukan suhu celcius :"))
+# print("suhu adalah :", celcius, "celcius")
+
+# reamur = (4/5) * celcius
+# print("suhu dalam reamur adalah ", reamur, "reamur")
+
+# fahrenheit = ((9/5) * celcius) + 32
+# print("suhu dalam fahrenheit adalah ", fahrenheit, "fahrenheit")
+
+# kelvin = celcius + 273
+# print("suhu dalam kelvin adalah ", kelvin, "kelvin")
+
+#  konversi reamur ke satuan lain
+# reamur = float(input("masukkan suhu dalam reamur"))
+# celcius = 5/4 * reamur
+# print("suhu dalam celcius adalah ", celcius, "celcius")
+# fahrenheit = ((9/4) * reamur) + 32
+# print("suhu dalam fahrenheit adalah ", fahrenheit, "fahrenheit")
+# kelvin = ((5/4) * reamur )+ 273
+# print("suhu dalam kelvin adalah ", kelvin, "kelvin")
+
+#  konversi fahrenheit ke satuan lain
+# fahrenheit = float(input("masukkan suhu dalam fahrenheit"))
+# celcius = (5/9) * (fahrenheit -32)
+# print("suhu dalam celcius adalah ", celcius, "celcius")
+# reamur = (4/9)*(fahrenheit - 32)
+# print("suhu dalam reamur adalah ", reamur, "reamur")
+# kelvin = celcius + 273
+# print("suhu dalam kelvin adalah ", kelvin, "kelvin")
+
+#  konversi kelvin ke satuan lain
+# kelvin = float(input("masukkan suhu dalam kelvin : "))
+# celcius = kelvin - 273
+# print("suhu dalam celcius adalah ", celcius, "celcius")
+# reamur = (4/5) * (kelvin - 273)
+# print("suhu dalam reamur adalah ", reamur, "reamur")
+# fahrenheit = ((9/5) * celcius) + 32
+# print("suhu dalam fahrenheit adalah ", fahrenheit, "fahrenheit")
