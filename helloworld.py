@@ -302,6 +302,28 @@
 # data  = bool(int(input("masukkan data :")))
 # print("Data nya dalah", data, ",type =", type(data))
 
+# OPERATOR BITWISE
+
+a = 8
+b = 4
+# ==or
+c = a | b
+print('nilai :', a, 'binary :', format(a, '07b'))
+print('nilai :', b, 'binary :', format(b, '07b'))
+print('nilai :', c, 'binary :', format(c, '07b'))
+d = a & b
+print('nilai :', a, 'binary :', format(a, '07b'))
+print('nilai :', b, 'binary :', format(b, '07b'))
+print('nilai :', d, 'binary :', format(d, '07b'))
+# xor
+e = a ^ b
+print('nilai :', a, 'binary :', format(a, '07b'))
+print('nilai :', b, 'binary :', format(b, '07b'))
+print('nilai :', e, 'binary :', format(e, '07b'))
+# not
+f = ~a
+
+
 
 
 
